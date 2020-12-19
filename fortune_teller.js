@@ -1,7 +1,7 @@
 //chooses timeframe of week, month, year
 function timeframe() {
     let time = '';
-    const randNum = Math.floor(Math.random() * 3);
+    const randNum = Math.floor(Math.random() * 2);
     //console.log(randNum)
     switch (randNum) {
         case 0:
@@ -10,9 +10,6 @@ function timeframe() {
         case 1:
             time = 'month';
             break;
-        case 2:
-            time = 'year';
-            break
         default:
             console.log('Issue with timeframe function')
     }
@@ -20,7 +17,7 @@ function timeframe() {
 };
 
 let timeFrame = timeframe();
-console.log(timeFrame);
+//console.log(timeFrame);
 
 //chooses particular day or month
 function partDayMonth() {
@@ -103,4 +100,22 @@ function partDayMonth() {
         };
 };
 //console.log(timeFrame);
-console.log(partDayMonth());
+//console.log(partDayMonth());
+const partDM = partDayMonth()
+ 
+//chooses event
+const eventArray = ['you will find love.', 'you will come into money.', 'you will go on holiday.', 'you will meet someone new.', 'you will find your dream pet.']
+const event = eventArray[i = Math.floor(Math.random() * eventArray.length)]
+
+//console.log(event);
+
+//sets display message
+function displayMessage() {
+    if (timeFrame === 'month') {
+        return `In ${partDM} ${event}`;
+    } else if (timeFrame === 'week') {
+        return `On ${partDM} ${event}`;
+    };
+};
+
+console.log(displayMessage());
