@@ -1,7 +1,11 @@
 //chooses timeframe of week, month, year
 function timeframe() {
     let time = '';
+<<<<<<< HEAD
     const randNum = Math.floor(Math.random() * 2);
+=======
+    const randNum = Math.floor(Math.random() * 3);
+>>>>>>> c1e722437b385fbee0220e60e3679aea645678ea
     //console.log(randNum)
     switch (randNum) {
         case 0:
@@ -10,6 +14,12 @@ function timeframe() {
         case 1:
             time = 'month';
             break;
+<<<<<<< HEAD
+=======
+        case 2:
+            time = 'year';
+            break
+>>>>>>> c1e722437b385fbee0220e60e3679aea645678ea
         default:
             console.log('Issue with timeframe function')
     }
@@ -17,7 +27,11 @@ function timeframe() {
 };
 
 let timeFrame = timeframe();
+<<<<<<< HEAD
 //console.log(timeFrame);
+=======
+console.log(timeFrame);
+>>>>>>> c1e722437b385fbee0220e60e3679aea645678ea
 
 //chooses particular day or month
 function partDayMonth() {
@@ -100,6 +114,7 @@ function partDayMonth() {
         };
 };
 //console.log(timeFrame);
+<<<<<<< HEAD
 //console.log(partDayMonth());
 const partDM = partDayMonth()
  
@@ -119,3 +134,6 @@ function displayMessage() {
 };
 
 console.log(displayMessage());
+=======
+console.log(partDayMonth());
+>>>>>>> c1e722437b385fbee0220e60e3679aea645678ea
